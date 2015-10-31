@@ -1,0 +1,139 @@
+\documentclass[main]{subfiles}
+\begin{document}
+
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+% summarizes usage of: std::string 
+% author: Benjamin Ellenberger
+
+\section{std::string}
+\renewcommand{\arraystretch}{1.5}
+\definecolor{lgray}{gray}{0.95}
+\definecolor{gray}{gray}{0.9}
+
+\rowcolors{1}{lgray}{gray}
+
+Strings are objects that represent sequences of characters.
+
+The standard string class provides support for such objects with an interface similar to that of a standard container of bytes, but adding features specifically designed to operate with strings of single-byte characters.
+
+\scriptsize
+\begin{longtable}{p{0.4\linewidth} p{0.6\linewidth}}
+\hline \textbf{Method} & \textbf{Description}\\ \hline
+\endfirsthead
+
+\hline \textbf{Method} & \textbf{Description}\\ \hline\hline
+\endhead
+
+\textbf{begin} &
+Return iterator to beginning\\
+
+\textbf{end} &
+Return iterator to end\\
+
+\textbf{rbegin} &
+Return reverse iterator to reverse beginning\\
+
+\textbf{rend} &
+Return reverse iterator to reverse end\\
+
+\textbf{size} &
+Return length of string\\
+
+\textbf{length} &
+Return length of string\\
+
+\textbf{max\_size} &
+Return maximum size of string\\
+
+\textbf{resize} &
+Resize string\\
+
+\textbf{capacity} &
+Return size of allocated storage\\
+
+\textbf{reserve} &
+Request a change in capacity\\
+
+\textbf{clear} &
+Clear string\\
+
+\textbf{empty} &
+Test if string is empty\\
+
+\textbf{operator[]} &
+Get character of string\\
+
+\textbf{at} &
+Get character in string\\
+
+\textbf{operator$+=$} 
+& Append to string\\
+
+\textbf{operator$+$}  
+& concatenates two strings or a string and a char \\
+
+\textbf{operator$==$}\newline
+\textbf{operator$!=$}\newline
+\textbf{operator$<$}\newline
+\textbf{operator$>$}\newline
+\textbf{operator$<=$}\newline
+\textbf{operator$>=$} & 
+ 
+lexicographically compares two strings \\
+
+\textbf{append} &
+Append to string\\
+
+\textbf{push\_back} &
+Append character to string\\
+
+\textbf{assign} &
+Assign content to string\\
+
+\textbf{insert} &
+Insert into string\\
+
+\textbf{erase} &
+Erase characters from string\\
+
+\textbf{replace} &
+Replace portion of string\\
+
+\textbf{swap} &
+Swap string values\\
+
+\textbf{c\_str} &
+Get C string equivalent\\
+
+\textbf{data} &
+Get string data\\
+
+\textbf{copy} &
+Copy sequence of characters from string\\
+
+\textbf{find} &
+Find content in string\\
+
+\textbf{rfind} &
+Find last occurrence of content in string\\
+
+\textbf{find\_first\_of} &
+Find character in string\\
+
+\textbf{find\_last\_of} &
+Find character in string from the end\\
+
+\textbf{find\_first\_not\_of} &
+Find absence of character in string\\
+
+\textbf{find\_last\_not\_of} &
+Find non-matching character in string from the end\\
+
+\textbf{substr} &
+Generate substring\\
+
+\textbf{compare} &
+Compare strings\\
+\end{longtable}
+\todo[inline]{}
+\end{document}
