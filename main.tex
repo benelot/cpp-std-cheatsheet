@@ -1,0 +1,152 @@
+\documentclass[11pt,article,oneside,a4paper]{memoir}
+
+%% Packages
+%% ========
+
+%% many common packages
+\input{commonpackages}
+
+%% Some more packages that you may want to use.  Have a look at the
+%% file, and consult the package docs for each.
+\input{extrapackages}
+
+%% Our layout configuration.
+\input{layoutsetup}
+
+%% Theorem environments.  You will have to adapt this for a German
+%% thesis.
+\input{theoremsetup}
+
+%% Helpful macros.
+\input{macrosetup}
+
+%%page layout settings and listing templates etc.
+\input{settings}
+
+\usepackage{listings}
+\usepackage{color}
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+
+\title{CPP std::Cheatsheet}
+\author{
+Benjamin Ellenberger\\
+\vspace{2em}
+Github (git/svn) repository page:\\ \url{https://github.com/benelot/cpp-std-cheatsheet}\\
+Contact \href{mailto:be.ellenberger@gmail.com}{be.ellenberger@gmail.com} if you have any questions.}
+\thesistype{Preparation for a Coding Interview}
+%\advisors{}
+\department{Institute of Neuroinformatics}
+\date{\today}
+
+\begin{document}
+\frontmatter
+
+%% Title page is auto-generated from document information above.
+%% DO NOT CHANGE.
+\begin{titlingpage}
+  \calccentering{\unitlength}
+  \begin{adjustwidth*}{\unitlength-24pt}{-\unitlength-24pt}
+    \maketitle
+  \end{adjustwidth*}
+\end{titlingpage}
+
+\mainmatter
+\newpage
+\chapterprecishere{---}
+\newpage
+
+%% This change is needed if the article option for the memoir document class
+%% is used, in order to count sections (article) as if they were chapters (memoir)
+\counterwithout{section}{chapter}
+
+%% Our content
+
+\newpage
+\clearpage
+\pagenumbering{roman}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{2}
+\tableofcontents
+
+
+
+\clearpage
+\pagenumbering{arabic}
+
+\newpage
+
+\section{Data structures}
+\todo[inline]{Describe them.}
+\subfile{Data-structure-ArrayList.tex}
+\subfile{Data-structure-Binary-Search-Tree.tex}
+\subfile{Data-structure-Map.tex}
+\subfile{Data-structure-Unordered-Map.tex}
+\subfile{Data-structure-Linked-List.tex}
+\subfile{Data-structure-Queue.tex}
+\subfile{Data-structure-Set.tex}
+\subfile{Data-structure-Unordered-Set.tex}
+\subfile{Data-structure-Stack.tex}
+\subfile{Data-structure-Vector.tex}
+
+\section{Algorithms}
+
+\todo[inline]{Describe them.}
+\subsection{Graph Algorithms}
+\subfile{Algorithm-BFS}
+\subfile{Algorithm-DFS}
+\subfile{Algorithm-Dijkstra}
+
+\subsection{Sorting Algorithms}
+\subfile{Algorithm-Heap-Sort}
+\subfile{Algorithm-Merge-Sort}
+\subfile{Algorithm-Quick-Sort}
+
+\subsection{Searching Algorithms}
+\subfile{Algorithm-Binary-Search}
+%\subfile{Algorithm-Template.tex}
+
+\section{Concepts}
+\todo[inline]{Describe them.}
+\subfile{Concept-Binary-Manipulation}
+\subfile{Concept-Memory}
+\subfile{Concept-Recursion}
+\subfile{Concept-Dynamic-Programming}
+\subfile{Concept-Big-O-Time-Space}
+%\subfile{Concept-Template}
+
+%\subfile{13-LearningTimeSeries.tex}
+
+%\pagebreak
+%\def\cheatsheet{2014}
+%\subfile{15-Cheatsheet2014-BE.tex}
+
+\subfile{Glossary.tex}
+
+\subfile{TODO.tex}
+
+\end{document}

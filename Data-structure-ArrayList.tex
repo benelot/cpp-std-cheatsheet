@@ -1,0 +1,86 @@
+\documentclass[main]{subfiles}
+\begin{document}
+
+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+% summarizes lecture 
+% author:
+
+\subsection{Array List}
+\renewcommand{\arraystretch}{1.5}
+\definecolor{lgray}{gray}{0.95}
+\definecolor{gray}{gray}{0.9}
+
+\rowcolors{1}{lgray}{gray}
+
+Some introduction text.
+
+\scriptsize
+\begin{longtable}{p{0.4\linewidth} p{0.6\linewidth}}
+\hline \textbf{Method} & \textbf{Description}\\ \hline
+\endfirsthead
+
+\hline \textbf{Method} & \textbf{Description}\\ \hline\hline
+\endhead
+boolean \textbf{add}(E e) &
+Appends the specified element to the end of this list.\\
+
+void \textbf{add}(\textit{int} index, \textit{E} element) &
+Inserts the specified element at the specified position in this list.\\
+
+boolean \textbf{addAll}(\textit{Collection}$<?~extends~E>$ c) &
+Appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's Iterator.\\
+boolean \textbf{addAll}(\textit{int} index, Collection$<?~extends~E>$ c) &
+Inserts all of the elements in the specified collection into this list, starting at the specified position.\\
+
+void \textbf{clear}() &
+Removes all of the elements from this list.\\
+
+Object \textbf{clone}() &
+Returns a shallow copy of this ArrayList instance.\\
+
+boolean \textbf{contains}(\textit{Object} o) &
+Returns true if this list contains the specified element.\\
+
+void \textbf{ensureCapacity}(\textit{int} minCapacity) &
+Increases the capacity of this ArrayList instance, if necessary, to ensure that it can hold at least the number of elements specified by the minimum capacity argument.\\
+
+E \textbf{get}(\textbf{int} index) &
+Returns the element at the specified position in this list.\\
+
+int \textbf{indexOf}(\textit{Object} o) &
+Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.\\
+boolean \textbf{isEmpty}() &
+Returns true if this list contains no elements.\\
+Iterator$<E>$ iterator() &
+Returns an iterator over the elements in this list in proper sequence.\\
+int \textbf{lastIndexOf}(\textit{Object} o) &
+Returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element.\\
+\textbf{ListIterator}$<E>$ \textbf{listIterator}() &
+Returns a list iterator over the elements in this list (in proper sequence).\\
+\textbf{ListIterator}$<E>$ \textbf{listIterator}(\textit{int} index) &
+Returns a list iterator over the elements in this list (in proper sequence), starting at the specified position in the list.\\
+E \textbf{remove}(int index) &
+Removes the element at the specified position in this list.\\
+boolean \textbf{remove}(Object o) &
+Removes the first occurrence of the specified element from this list, if it is present.\\
+boolean \textbf{removeAll}(Collection$<?>$ c) &
+Removes from this list all of its elements that are contained in the specified collection.\\
+protected void removeRange(\textit{int} fromIndex, \textit{int} toIndex) &
+Removes from this list all of the elements whose index is between fromIndex, inclusive, and toIndex, exclusive.\\
+boolean \textbf{retainAll}(Collection$<?>$ c) &
+Retains only the elements in this list that are contained in the specified collection.\\
+E set(int index, E element) &
+Replaces the element at the specified position in this list with the specified element.\\
+int size() &
+Returns the number of elements in this list.\\
+List$<E>$ \textbf{subList}(\textit{int} fromIndex, \textit{int} toIndex) &
+Returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.\\
+Object[] \textbf{toArray}() &
+Returns an array containing all of the elements in this list in proper sequence (from first to last element).\\
+$<T>$ $T[]$ \textbf{toArray}(\textit{T[]} a) &
+Returns an array containing all of the elements in this list in proper sequence (from first to last element); the runtime type of the returned array is that of the specified array.\\
+void \textbf{trimToSize}() &
+Trims the capacity of this ArrayList instance to be the list's current size.\\
+\end{longtable}
+\todo[inline]{}
+\end{document}
